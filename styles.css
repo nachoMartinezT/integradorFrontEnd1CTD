@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+@media (max-width: 1440px){
+
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 50px;
+    }
+    
+    header ul {
+        display: flex;
+    }
+    
+    header li {
+        margin-right: 10px;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+
+}
+
+body {
+    background-image: url('/img/bg-tablet-pattern.svg');
+    background-repeat: repeat-y;
+    background-position:right;
+    font-size: 16px;
+    font-family: 'Be Vietnam';
+    color: rgb(35, 44, 81);
+}
+
+
+button {
+    background-color: rgb(242, 95, 58);
+    color: white;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    
+}
+
+button :hover {
+
+}
+
