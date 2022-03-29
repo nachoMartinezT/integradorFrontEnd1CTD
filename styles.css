@@ -14,17 +14,23 @@
         padding: 50px;
     }
     
-    header ul {
+    section {
+        display: flex;
+        justify-content:space-around;
+    }
+
+    ul {
         display: flex;
     }
     
-    header li {
+    li {
         margin-right: 10px;
         list-style-type: none;
     }
 
     a {
         text-decoration: none;
+        
     }
     
 
@@ -51,5 +57,15 @@ button {
 
 button :hover {
 
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1E1E26;
+}
+
+footer div img {
+    color: white; 
 }
 
