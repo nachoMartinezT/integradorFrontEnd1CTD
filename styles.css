@@ -10,29 +10,40 @@
     header {
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        align-items: center;
         padding: 50px;
     }
     
-    section {
+    main section {
         display: flex;
-        justify-content:space-around;
+        justify-content:center;
+        margin: 165px, 100px;
     }
 
-    ul {
+    main section article {
+        width: 50%;
+    }
+
+    header ul {
         display: flex;
     }
     
-    li {
+    header ul li {
         margin-right: 10px;
         list-style-type: none;
     }
 
-    a {
+    header ul li a {
         text-decoration: none;
         
     }
     
+    section article h2 {
+        font-size: 58px;
+        font-weight: 700;
+    }
+
 
 }
 
@@ -43,6 +54,10 @@ body {
     font-size: 16px;
     font-family: 'Be Vietnam';
     color: rgb(35, 44, 81);
+}
+
+section article.grafic {
+    background-image: url('/img/illustration-intro.svg');
 }
 
 
