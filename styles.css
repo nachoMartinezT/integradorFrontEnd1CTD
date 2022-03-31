@@ -4,8 +4,14 @@
 }
 
 
+body {
+    
+    font-size: 16px;
+    font-family: 'Be Vietnam';
+    color: rgb(35, 44, 81);
+}
 
-@media (max-width: 1440px){
+
 
     header {
         display: flex;
@@ -15,14 +21,146 @@
         padding: 50px;
     }
     
-    main section {
+    main section.firstSection {
         display: flex;
-        justify-content:center;
-        margin: 165px, 100px;
+        
+        margin-top: 100px;
+    }
+
+    main section.firstSection :nth-child(1){
+        padding-top: 30px;
     }
 
     main section article {
         width: 50%;
+    }
+
+    main section.firstSection {
+        margin: 120px 150px;
+    }
+
+    main section.firstSection article p {
+        margin-top: 40px;
+        margin-right: 150px;
+        padding-right: 30px;
+    }
+
+    main section.firstSection article button {
+        margin-top: 40px;
+    }
+
+    main section.secondSection h3 {
+        font-size: 36px;
+    }
+
+    main section.secondSection {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 150px;
+
+    }
+
+    main section.secondSection article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section.secondSection article div{
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    main section.secondSection article div div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section.secondSection article div span {
+        background-color: rgb(242, 95, 58);
+        border-radius: 30px;
+        width: 65px;
+        height: 20px;
+        padding-left: 10px;
+        color: white;
+        margin-right: 20px;
+    }
+
+    main section.secondSection p {
+        margin-top: 30px;
+        margin-right: 100px;
+    }
+
+    
+    main section.community {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    main section.community h3 {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        margin: 50px 0px;
+    }
+
+
+    main section.community img {
+        position: relative;
+        bottom: 35px;
+        width: 70px;
+    }
+
+    main section.community div {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    main section.community div article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 75px;
+        background: #FAFAFA;
+    }
+
+    main section.community div article h5 {
+        font-weight: 700;
+        
+    }
+
+    main section.community div article p {
+        margin-top: 20px;
+    }
+
+    main section.community button {
+        
+        width: 135px;
+        margin-top: 50px;
+        
+    }
+
+    main :nth-child(4) {
+        background: #F3613C;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px;
+    }
+
+    main :nth-child(4) h3{
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+        width: 40%;
+    }
+
+    main :nth-child(4) button{
+        color: #F3613C;
+        background: white;
     }
 
     header ul {
@@ -36,7 +174,12 @@
 
     header ul li a {
         text-decoration: none;
+        color: rgb(35, 44, 81);
         
+    }
+
+    header ul li a :hover{
+        cursor: pointer;
     }
     
     section article h2 {
@@ -45,33 +188,29 @@
     }
 
 
+section article.grafic img {
+    width: 100%;
 }
 
-body {
-    background-image: url('/img/bg-tablet-pattern.svg');
-    background-repeat: repeat-y;
-    background-position:right;
-    font-size: 16px;
-    font-family: 'Be Vietnam';
-    color: rgb(35, 44, 81);
+section div {
+    display: flex;
 }
 
-section article.grafic {
-    background-image: url('/img/illustration-intro.svg');
-}
+
 
 
 button {
     background-color: rgb(242, 95, 58);
     color: white;
+    font-weight: 500;
     border: 0px;
     border-radius: 20px;
     padding: 10px 20px;
     
 }
 
-button :hover {
-
+button:hover {
+    cursor: pointer;
 }
 
 footer {
@@ -82,5 +221,68 @@ footer {
 
 footer div img {
     color: white; 
+    width: 120px;
 }
 
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer div div {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+footer div div i {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+footer ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a :hover {
+    cursor: pointer;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div form input {
+    padding: 10px;
+    border-radius:50px 50px;
+}
+
+footer div form  button {
+    margin-left: 10px;
+}
+
+footer div form label {
+    font-size: 10px;
+    color: #F3613C;
+    margin-left: 10px;
+}
+
+footer div  p {
+    color: lightgrey;
+    font-size: 12px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
