@@ -20,6 +20,10 @@ body {
         align-items: center;
         padding: 50px;
     }
+
+    header :nth-child(3){
+        display: none;
+    }
     
     main section.firstSection {
         display: flex;
@@ -350,6 +354,21 @@ footer div  p {
         text-align: center;
     }
 
+
+    main :nth-child(4){
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        width: 90%;
+        align-items: center;
+    }
+
+    main :nth-child(4) h3 {
+        text-align: center;
+        font-size: 24px;
+        width: 80%;
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 480px){
@@ -361,6 +380,10 @@ footer div  p {
 
     header nav {
         display: none;
+    }
+
+    header :nth-child(3) :hover {
+
     }
 
     header button {
@@ -406,14 +429,58 @@ footer div  p {
         top: 50px;
     }
    
-
-
-
-
     footer {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
     }
+
+    footer ul {
+        max-width: 140px;
+    }
+
+    footer div form label {
+        display: none;
+    }
+
+    footer div.nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer :nth-child(1) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer :nth-child(1) div {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    footer :nth-child(1) img {
+        margin-bottom: 40px;
+    }
+    
+    footer :nth-child(3) form div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer :nth-child(3) button {
+        width: 50px;
+    }
+
+    footer :nth-child(3) p {
+        position: relative;
+        top: 250px
+    } 
+   
+
+
+  
 
 
 }
